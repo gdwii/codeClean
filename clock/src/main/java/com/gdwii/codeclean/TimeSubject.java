@@ -1,6 +1,7 @@
 package com.gdwii.codeclean;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public abstract class TimeSubject {
     protected Map<String, Clock> clocks = new HashMap<>();

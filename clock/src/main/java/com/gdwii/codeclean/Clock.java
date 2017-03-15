@@ -1,9 +1,13 @@
 package com.gdwii.codeclean;
 
 public abstract class Clock {
-    private final int UTC_OFFSET = 0;
+    public static final int UTC_OFFSET = 0;
 
-    private int localTime;
+    protected int localTime;
 
     public abstract void setLocalTime(int localTime);
+
+    public static int toLocalTime(int utcZeroTime) {
+        return utcZeroTime + UTC_OFFSET;
+    }
 }
