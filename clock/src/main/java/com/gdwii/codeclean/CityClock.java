@@ -5,7 +5,7 @@ package com.gdwii.codeclean;
  */
 public class CityClock extends Clock{
     public CityClock(int utcOffSet) {
-    	super();
+    	super(utcOffSet);
 	}
 
 	@Override
