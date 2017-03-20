@@ -4,7 +4,12 @@ package com.gdwii.codeclean;
  * Created by gdw on 2017/3/15.
  */
 public class PhoneClock extends Clock{
-    private UtcTime utcTime;
+    
+	public PhoneClock(int utcOffSet) {
+		super(utcOffSet);
+	}
+
+	private UtcTime utcTime;
 
     @Override
     public void setLocalTime(int localTime) {
