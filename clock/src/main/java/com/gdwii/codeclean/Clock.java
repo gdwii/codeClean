@@ -14,4 +14,8 @@ public abstract class Clock {
 	public String getTime() {
 		return String.valueOf(localTime);
 	}
+
+	public  void  setLocalTimeFromUtcZeroTime(int utcZeroTime){
+        this.localTime = utcZeroTime + UTC_OFFSET;
+    }
 }
