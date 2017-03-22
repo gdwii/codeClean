@@ -1,7 +1,7 @@
 package com.gdwii.codeclean;
 
 public abstract class Clock {
-    public static int UTC_OFFSET = 0;
+    protected int UTC_OFFSET = 0;
 
     protected int localTime;
 
